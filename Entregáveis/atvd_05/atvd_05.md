@@ -1,7 +1,8 @@
 **NOME: Virgínia de Fernandes Souza** 
+
 **MATRÍCULA: 201700281**
 
-###Especificações
+### Especificações
 
 1.Considere o seguinte cenário: Uma corretora de seguros concede desconto sobre o prêmio anual de seguro de automóvel, aos seus segurados conforme as regras a seguir:
 |Sexo|Idade (anos)|Estado Civil|Desconto (%)|
@@ -24,6 +25,7 @@
 
    2. Geração da tabela de decisão para representar o cenário.
       1. Editar este arquivo e adicionar a tabela de decisão.
+
 | |Regra1|Regra2|Regra3|Regra4|Regra5|Regra6|Regra7|Regra8|
 |---|---|---|---|---|---|---|---|---|
 |**Condições**| | | | | | | | |
@@ -35,6 +37,20 @@
 
    3. Geração do conjunto de casos de teste suficientes para cobrir todos os cenários, constantes do grafo e da tabela de decisão.
       1. Editar este arquivo e adicionar a tabela com os casos de teste, conforme exemplos disponibilizados em tarefas anteriores.
+
+
+| CT   | MASCULINO| IDADE > 25 | CASADO(A) | VALOR     |
+| --------------- | ---------| ---------- | --------- | --------- |
+| CT01 | TRUE     | FALSE      | FALSE     | R$2000,00 |
+| CT02 | TRUE     | FALSE      | TRUE      | R$1900,00 |
+| CT03 | TRUE     | TRUE       | FALSE     | R$1800,00 |
+| CT04 | TRUE     | TRUE       | TRUE      | R$1700,00 |
+| CT05 | FALSE    | FALSE      | FALSE     | R$1900,00 |
+| CT06 | FALSE    | FALSE      | TRUE      | R$1800,00 |
+| CT07 | FALSE    | TRUE       | FALSE     | R$1700,00 |
+| CT08 | FALSE    | TRUE       | TRUE      | R$1600,00 |
+
+
 
 
    4. Em relação aos casos de teste, considere o valor do seguro de R$ 2.000,00 (Dois mil reais). Desta forma, o valor esperado, do resultado do caso de teste, deve ser o valor líquido a ser pago. Ou seja, o prêmio deduzido do valor correspondente ao percentual do desconto obtido pelo cliente.
